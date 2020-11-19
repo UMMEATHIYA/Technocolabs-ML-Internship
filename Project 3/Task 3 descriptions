@@ -1,0 +1,9 @@
+Problem
+Performing Logistic Regression with a New Feature and Creating a Precision-Recall Curve
+ In this Project, you'll train a logistic regression using a feature besides EDUCATION. Then you will graphically assess the tradeoff between precision and recall, as well as calculate the area underneath a precision-recall curve. You will also calculate the ROC AUC on both the training and testing sets and compare them.
+Task:
+Create a dataframe of cleaned_data.csv. Then, use scikit-learn's train_test_split to make a new set of training and testing data. This time, instead of EDUCATION, use LIMIT_BAL: the account's credit limit.
+Train a logistic regression model using the training data from your split.
+Create the array of predicted probabilities for the testing data.
+Calculate the area under the precision-recall curve.
+Recalculate the ROC AUC, except this time do it for the training data.
