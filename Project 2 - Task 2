@@ -1,0 +1,17 @@
+Problem
+Our client is a credit card company. They have brought us a dataset that includes some demographics and recent financial data (the past six months) for a sample of 30,000 of their account holders. This data is at the credit account level; in other words, there is one row for each account (you should always clarify what the definition of a row is, in a dataset). Rows are labeled by whether in the next month after the six month historical data period, an account owner has defaulted, or in other words, failed to make the minimum payment.
+Data Exploration Steps
+Now that we've understood the business problem and have an idea of what is supposed to be in the data, we can compare these impressions to what we actually see in the data. Your job in data exploration is to not only look through the data both directly and using numerical and graphical summaries, but also to think critically about whether the data make sense and match what you have been told about them. These are helpful steps in data exploration:
+How many columns are there in the data?
+These may be features, response, or metadata.
+How many rows (samples)?
+What kind of features are there? Which are categorical and which are numerical?
+Categorical features have values in discrete classes such as "Yes", "No", or "maybe". Numerical features are typically on a continuous numerical scale, such as dollar amounts.
+What does the data look like in these features?
+To see this, you can examine the range of values in numeric features, or the frequency of different classes in categorical features, for example.
+Is there any missing data?
+We have already answered questions 1 and 2 in the previous step; there are 30,000 rows and 25 columns. As we start to explore the rest of these questions in the following activity, pandas will be our go-to tool. We begin by verifying basic data integrity in the next activity.
+Note that compared to the website's description of the data dictionary, X6-X11 are called PAY_1-PAY_6 in our data. Similarly, X12-X17 are BILL_AMT1-BILL_AMT6, and X18-X23 are PAY_AMT1-PAY_AMT6.
+Verifying Basic Data Integrity
+we will perform a basic check on whether our dataset contains what we expect and verify whether there are the correct number of samples.
+The data are supposed to have observations for 30,000 credit accounts. While there are 30,000 rows, we should also check whether there are 30,000 unique account IDs. It's possible that, if the SQL query used to generate the data was run on an unfamiliar schema, values that are supposed to be unique are in fact not unique.
