@@ -1,0 +1,24 @@
+Problem
+Deriving Financial Insights
+The raw materials of the financial analysis are completed. However, we can generate some additional insights from these results, to provide the client with more context around how the predictive model we built can generate value for them. In particular, we have looked at results for the testing set we reserved from model building. The client may have more accounts than those they supplied to us, as representative of their business. We should report to them results that could be easily scaled to however big their business is, in terms of number of accounts.
+We can also help them understand how much this program will cost; while the net savings are an important number to consider, the client will have to fund the counseling program before any of these savings will be obtained. Finally, we will link the financial analysis back to standard machine learning model performance metrics.
+Once you complete the challenge, you should be able to communicate the initial cost of the counseling program to the client, as well as obtain plots of precision and recall.
+
+Imputation of Missing Data, Financial Analysis, and Delivery to Client
+Compare the results of all models built for a case study
+Replace missing data using a range of imputation strategies
+Build a multiclass classification model
+Conduct financial analysis to find the optimal threshold for binary classification
+Derive financial insight from the model to help the client guide budgeting and operational strategy
+Deliver the model and make recommendations for usage
+This lesson presents a comparison of the results from the various models built for a study, describes the financial insights derived from the final model, and outlines the final steps of the project needed to satisfy the client's requirements.
+
+
+Introduction
+we introduced decision trees and random forests and saw how they could be used to improve the quality of predictive modeling of the case study data.
+In this lesson, we consider model building to be complete and address all the remaining issues that need attention before delivering the model to the client. The two key elements of this lesson are data imputation and financial analysis.
+With data imputation, you will explore several strategies for making educated guesses of the missing values of features of the dataset. This should enable you to make predictions for all samples.
+In the financial analysis, you will take the final yet crucial steps of understanding how a model can be used in the real world. Your client will likely appreciate the efforts you made in creating a more accurate model or one with higher ROC AUC. However, they will definitely appreciate understanding how much money the model can help them earn or save and will be happy to receive specific guidance on how to maximize the model's potential for this. Once we review imputation and financial analysis, we conclude with a few thoughts on how to deliver and monitor the model.
+Review of Modeling Results
+In order to develop a binary classification model to meet the business requirements of our client, we have now tried several modeling approaches to varying degrees of success. In the end, we will pick the one that worked the best, to perform additional analyses on and present to our client. However, it is also good to present the client with findings from the various options that were explored. This shows that a thorough job was done.
+Here, we review the different models that we tried for the case study problem, the hyperparameters that we needed to tune, and results from cross-validation. We only include the work we did using all possible features, not the earlier models where we used only one or two features (e.g. EDUCATION) as a way to learn how to use model-fitting functions in scikit-learn.
