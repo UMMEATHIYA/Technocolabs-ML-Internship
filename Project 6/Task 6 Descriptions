@@ -1,0 +1,10 @@
+Problem
+Cross-Validation Grid Search with Random Forest
+ In this Project, you will conduct a grid search over the number of trees in the forest (n_estimators) and the maximum depth of a tree (max_depth) for a random forest model on the case study data. You will then create a visualization showing the average testing score for the grid of hyperparameters that you searched over.
+Train a decision tree model in scikit-learn
+Use Graphviz to visualize a trained decision tree model
+Formulate the cost functions used to split nodes in a decision tree
+Perform a hyperparameter grid search using cross-validation with scikit-learn functions
+Train a random forest model in scikit-learn
+Evaluate the most important features in a random forest model
+This lesson introduces decision trees and random forests in scikit-learn in addition to describing the method to perform hyperparameter grid search.
